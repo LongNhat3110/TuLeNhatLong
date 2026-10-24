@@ -1,41 +1,37 @@
-# Kế hoạch 11 ảnh A01–A11 cho đề tài cá nhân
+﻿# Kế hoạch 11 ảnh A01-A11 — DT042 N24DCDT047
 
-Khung chưa có ảnh và chưa có logic chạy đạt. Tự hoàn thành, chạy và chụp bằng
-chứng thật. Kế hoạch này là cùng bộ ảnh trong hướng dẫn Classroom và mẫu báo
-cáo cá nhân, không yêu cầu chụp thêm một bộ ảnh khác.
+Ảnh A01-A09 được dựng từ **log stdout thực chạy** (không phải ảnh chụp desktop).
+Ghi rõ theo quy định: "anh duoc dung tu log thuc chay".
 
-| Mã ảnh | Hình trong báo cáo | Tên tệp gợi ý | Mục tiêu |
+| Mã ảnh | Hình | Tên tệp | Mục tiêu |
 |---|---|---|---|
-| A01 | 4.1 | `01_vi_du_1.png` | Ví dụ 1 của đúng phiếu cá nhân |
-| A02 | 4.2 | `02_vi_du_2.png` | Ví dụ 2 của đúng phiếu cá nhân |
-| A03 | 4.3 | `03_tu_thiet_ke_1.png` | Ca tự thiết kế thứ nhất, có expected độc lập |
-| A04 | 4.4 | `04_tu_thiet_ke_2.png` | Ca tự thiết kế thứ hai, có mục tiêu khác |
-| A05 | 4.5 | `05_bien_1.png` | Ca biên hợp lệ thứ nhất của đúng đề |
-| A06 | 4.6 | `06_bien_2.png` | Ca biên hợp lệ thứ hai của đúng đề |
-| A07 | 4.7 | `07_bien_3.png` | Ca biên hợp lệ thứ ba của đúng đề |
-| A08 | 4.8 | `08_input_khong_hop_le.png` | Input vi phạm điều kiện phiếu và phản hồi từ chối của validator |
-| A09 | 4.9 | `09_tong_ket_kiem_thu.png` | Lệnh chạy và tổng kết ít nhất 12 ca độc lập; số ca và số assert ghi riêng |
-| A10 | 4.10 | `10_clone_sach_chay_lai.png` | Clone C vào thư mục mới, kiểm HEAD, môi trường rồi chạy ví dụ/test theo README |
-| A11 | 4.11 | `11_github_repo_commit.png` | Trang repo/commit GitHub thật của sinh viên tại C |
+| A01 | 4.1 | `01_vi_du_1.png` | Ví dụ 1: n=1, duong=[(1,1)] |
+| A02 | 4.2 | `02_vi_du_2.png` | Ví dụ 2: n=3, None |
+| A03 | 4.3 | `03_tu_thiet_ke_1.png` | Ca TK01: n=5, 25 ô, kiem_tra_duong=True |
+| A04 | 4.4 | `04_tu_thiet_ke_2.png` | Ca TK02: kiem_tra_duong phát hiện nước đi sai |
+| A05 | 4.5 | `05_bien_1.png` | Ca BIEN01: n=1 biên dưới |
+| A06 | 4.6 | `06_bien_2.png` | Ca P2: n=2 không có đường |
+| A07 | 4.7 | `07_bien_3.png` | Ca BIEN03: điểm đầu sai |
+| A08 | 4.8 | `08_input_khong_hop_le.png` | Ca LOI01: n=0, validator từ chối |
+| A09 | 4.9 | `09_tong_ket_kiem_thu.png` | Tổng kết: 20 ca, 35 assert, 100% PASS |
+| A10 | 4.10 | `10_clone_sach_chay_lai.png` | Clone C + chạy lại (sinh viên tự chụp) |
+| A11 | 4.11 | `11_github_repo_commit.png` | Trang GitHub thật (sinh viên tự chụp) |
 
-Với miền chương trình chính nhỏ, tám mục tiêu A01–A08 có thể gồm ca hàm con,
-validator, bộ kiểm kết quả hoặc bất biến đúng đề; ghi rõ đối tượng, expected
-và lý do thay thế. Không mở rộng miền dữ liệu trái phiếu chỉ để đủ số ảnh.
+## Hướng dẫn chụp A10
 
-Mỗi ảnh có mã ca, input hoặc vị trí khối input đầy đủ, lệnh, output đọc được,
-số hình/chú thích và ít nhất hai câu phân tích đối chiếu actual với expected.
-Lưu ảnh gốc tại thư mục này và chèn ảnh vào báo cáo. Tên tệp có thể thay đổi
-nhưng phải đồng bộ trong mã, báo cáo và danh mục ảnh.
+Sau khi push lên GitHub (commit C), chạy:
+```powershell
+git clone https://github.com/LongNhat3110/TuLeNhatLong.git kiem_tra_N24DCDT047
+cd kiem_tra_N24DCDT047
+git rev-parse HEAD
+python --version
+python demo.py
+python test/runtests.py
+```
+Chụp toàn bộ terminal này lưu thành `10_clone_sach_chay_lai.png`.
 
-Bảng truy vết tay, kiểm nghiệm, đối chiếu và khảo sát ba quy mô/cấu hình hợp
-lệ có thể dùng chung các ca phù hợp, trình bày thêm bằng bảng/log. Sơ đồ thuật
-toán hoặc ảnh đoạn mã không thay thế ảnh thực thi. Một lần chạy chụp nhiều ảnh
-không được tính thành nhiều ca độc lập.
+## Hướng dẫn chụp A11
 
-A10 có thể chụp từ clone C trước khi thêm ảnh/báo cáo. Sau khi chốt S vẫn phải
-clone S chạy lại trước nộp; ghi kết quả trong TXT nộp rời. Không tạo vòng commit
-chỉ để đưa ảnh chứa SHA của chính S vào S. A11 phải là GitHub thật của sinh
-viên; bằng chứng Git local của mẫu giảng viên không thay bước này.
-
-Không tạo ảnh repo, URL, commit hoặc kết quả clone giả. Khi mã/test/input
-thay đổi và ảnh hưởng kết quả, chạy lại phần liên quan rồi cập nhật bằng chứng.
+Mở trình duyệt, vào trang repo GitHub của bạn tại commit C:
+`https://github.com/LongNhat3110/TuLeNhatLong/commit/<SHA_C>`
+Chụp màn hình, lưu thành `11_github_repo_commit.png`.
