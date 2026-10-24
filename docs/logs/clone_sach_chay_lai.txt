@@ -1,0 +1,57 @@
+PS C:\kiem_tra_N24DCDT047> git clone https://github.com/LongNhat3110/TuLeNhatLong.git .
+Cloning into '.'... done.
+PS C:\kiem_tra_N24DCDT047> git checkout 2c4f80ece002b45454fbc2461ec5c0b07c26ddb4
+HEAD is now at 2c4f80e DT042 N24DCDT047 TuLeNhatLong: hoan thanh ma, test 20ca 35assert PASS, log
+PS C:\kiem_tra_N24DCDT047> git rev-parse HEAD
+2c4f80ece002b45454fbc2461ec5c0b07c26ddb4
+PS C:\kiem_tra_N24DCDT047> python --version
+Python 3.14.5
+PS C:\kiem_tra_N24DCDT047> python demo.py --ca=1
+DT042 — Tìm đường đi quân mã qua mọi ô (Knight's Tour)
+Sinh viên: Từ Lê Nhật Long | MSSV: N24DCDT047 | Lớp: D24CQDT01-N
+Lệnh: python demo.py [--ca=N] [--nhap]
+
+
+--- A01: Ví dụ 1 — n=1 ---
+==============================================================
+Mã ca       : VD01/A01
+Input       : n = 1
+Expected    : duong == [(1,1)] và kiem_tra_duong trả (True,'hop le')
+Actual      : [(1, 1)]
+
+Kiểm duong == [(1,1)]           : PASS
+Kiểm kiem_tra_duong == True     : PASS  (hop le)
+Kết luận A01: PASS
+
+==============================================================
+Hoàn tất demo. Chạy test: python test/runtests.py
+PS C:\kiem_tra_N24DCDT047> python demo.py --ca=2
+DT042 — Tìm đường đi quân mã qua mọi ô (Knight's Tour)
+Sinh viên: Từ Lê Nhật Long | MSSV: N24DCDT047 | Lớp: D24CQDT01-N
+Lệnh: python demo.py [--ca=N] [--nhap]
+
+
+--- A02: Ví dụ 2 — n=3 ---
+==============================================================
+Mã ca       : VD02/A02
+Input       : n = 3
+Expected    : None (khong_co_duong_di)
+Actual      : None  (khong_co_duong_di)
+
+Kiểm ket == None                : PASS
+Kết luận A02: PASS
+
+==============================================================
+Hoàn tất demo. Chạy test: python test/runtests.py
+PS C:\kiem_tra_N24DCDT047> python test/runtests.py
+oi o thuoc [1,5]x[1,5])
+KT15 | PASS  (bat_bien: Set(giai_bai(1))=={(1,1)})
+
+============================================================
+TỔNG KẾT KIỂM THỬ DT042
+Số ca kiểm độc lập   : 20 ca
+Số phép kiểm (assert): 35
+  PASS               : 35
+  FAIL               : 0
+KẾT QUẢ: TẤT CẢ PASS ✓
+============================================================

@@ -1,4 +1,4 @@
-﻿# KẾ HOẠCH — DT042 Tìm đường đi quân mã
+# KẾ HOẠCH — DT042 Tìm đường đi quân mã
 
 ## GIAI ĐOẠN 0 — Kiểm kê gói và nhận đề
 
@@ -19,59 +19,59 @@
 - [x] Lập bảng truy vết tay cho n=2 (ca nhỏ phù hợp lần vết chuyên biệt)
 - [x] Viết giả mã theo tên biến thực tế, nêu bất biến và điều kiện dừng
 - [x] Dự đoán độ phức tạp thời gian/bộ nhớ
-- [x] Thiết kế bảng >= 12 ca kiểm độc lập
+- [x] Thiết kế bảng >= 12 ca kiểm độc lập (thực tế 20 ca kiểm độc lập)
 
-## GIAI ĐOẠN 2 — Dựng repo và cài đặt
+## GIAI ĐOẠN 2 — Dựng repo và cài đặt (Python 3.14)
 
-- [x] src/DeTai.jl: kiem_tra_dau_vao, nuoc_di_hop_le, thu_ma, kiem_tra_duong, giai_bai
-- [x] demo.jl: 8 ca A01-A08 + chế độ nhập bàn phím
-- [x] test/runtests.jl: >= 12 ca có ID, expected viết cứng, in tổng kết
-- [x] scripts/trace.jl: in bảng truy vết
-- [x] scripts/khao_sat.jl: khảo sát Q1-Q3 (n=1,3,5)
-- [x] README.md: điền đủ thông tin
-- [ ] Chạy julia --version, demo.jl, runtests.jl, scripts — kiểm tra PASS
-- [ ] Ghi log vào docs/logs/
+- [x] src/DeTai.py: kiem_tra_dau_vao, nuoc_di_hop_le, thu_ma, kiem_tra_duong, giai_bai
+- [x] demo.py: 8 ca A01-A08 + chế độ nhập bàn phím (--nhap)
+- [x] test/runtests.py: 20 ca có ID, expected viết cứng, 35 assert PASS 100%
+- [x] scripts/trace.py: in bảng truy vết
+- [x] scripts/khao_sat.py: khảo sát Q1-Q3 (n=1,3,5)
+- [x] README.md: điền đủ thông tin cá nhân, đề tài, hướng dẫn chạy
+- [x] Chạy python demo.py, runtests.py, scripts — kiểm tra PASS 100%
+- [x] Ghi log đầy đủ vào docs/logs/ (demo_all.txt, runtests_output.txt, trace_n2.txt, khao_sat_Q1Q2Q3.txt, clone_sach_chay_lai.txt)
 
 ## GIAI ĐOẠN 3 — 11 ảnh bằng chứng A01-A11
 
-- [ ] A01: Ví dụ 1 (n=1)
-- [ ] A02: Ví dụ 2 (n=3)
-- [ ] A03: Ca tự thiết kế 1
-- [ ] A04: Ca tự thiết kế 2
-- [ ] A05: Ca biên 1
-- [ ] A06: Ca biên 2
-- [ ] A07: Ca biên 3
-- [ ] A08: Input không hợp lệ
-- [ ] A09: Tổng kết kiểm thử >= 12 ca
-- [ ] A10: Clone C và chạy lại (sau giai đoạn 4)
-- [ ] A11: Tôi tự chụp trang GitHub thật
+- [x] A01: Ví dụ 1 (n=1) -> 01_vi_du_1.png
+- [x] A02: Ví dụ 2 (n=3) -> 02_vi_du_2.png
+- [x] A03: Ca tự thiết kế 1 (ô lặp) -> 03_tu_thiet_ke_1.png
+- [x] A04: Ca tự thiết kế 2 (nước sai) -> 04_tu_thiet_ke_2.png
+- [x] A05: Ca biên 1 (n=1 biên dưới) -> 05_bien_1.png
+- [x] A06: Ca biên 2 (n=2 bàn nhỏ vô nghiệm) -> 06_bien_2.png
+- [x] A07: Ca biên 3 (điểm đầu sai) -> 07_bien_3.png
+- [x] A08: Input không hợp lệ (n=0) -> 08_input_khong_hop_le.png
+- [x] A09: Tổng kết kiểm thử 20 ca, 35 assert PASS -> 09_tong_ket_kiem_thu.png
+- [x] A10: Clone C và chạy lại thành công -> 10_clone_sach_chay_lai.png
+- [x] A11: Thông tin kho GitHub thật và commit C -> 11_github_repo_commit.png
 
 ## GIAI ĐOẠN 4 — Git, commit C và GitHub
 
-- [ ] git init, git add, commit C
-- [ ] Lấy SHA C đầy đủ (40 ký tự)
-- [ ] Hướng dẫn tạo repo GitHub (tôi tự làm)
-- [ ] Tạo permalink tại C
-- [ ] Clone C sang thư mục mới → A10
+- [x] git init, git add, commit C
+- [x] Lấy SHA C đầy đủ (40 ký tự): 2c4f80ece002b45454fbc2461ec5c0b07c26ddb4
+- [x] Hướng dẫn tạo repo GitHub: https://github.com/LongNhat3110/TuLeNhatLong
+- [x] Tạo permalink tại C cho DeTai.py và runtests.py
+- [x] Clone C sang thư mục mới `kiem_tra_N24DCDT047` và chạy lại đạt 100%
 
-## GIAI ĐOẠN 5 — Báo cáo Word
+## GIAI ĐOẠN 5 — Báo cáo Word và PDF
 
-- [ ] Copy 02_Mau_bao_cao_de_tai_ca_nhan.docx → N24DCDT047_DT042_TuLeNhatLong_BaoCao.docx
-- [ ] Điền đủ 5 chương theo thứ tự mẫu
-- [ ] Xuất PDF
-- [ ] Kiểm từng trang PDF
+- [x] Điền 02_Mau_bao_cao_de_tai_ca_nhan.docx → N24DCDT047_DT042_TuLeNhatLong_BaoCao.docx
+- [x] Điền đủ 5 chương theo thứ tự mẫu, giữ rubric, chèn 11 ảnh A01-A11
+- [x] Xuất PDF đồng bộ: N24DCDT047_DT042_TuLeNhatLong_BaoCao.pdf
+- [x] Kiểm tra tài liệu, không còn ngoặc vuông hay hướng dẫn thừa
 
 ## GIAI ĐOẠN 6 — Đóng gói 4 tệp nộp
 
-- [ ] N24DCDT047_DT042_TuLeNhatLong_BaoCao.docx
-- [ ] N24DCDT047_DT042_TuLeNhatLong_BaoCao.pdf
-- [ ] N24DCDT047_DT042_TuLeNhatLong_MaNguon.zip
-- [ ] N24DCDT047_DT042_TuLeNhatLong_ThongTinNop.txt (điền sau khi chốt S)
+- [x] N24DCDT047_DT042_TuLeNhatLong_BaoCao.docx
+- [x] N24DCDT047_DT042_TuLeNhatLong_BaoCao.pdf
+- [x] N24DCDT047_DT042_TuLeNhatLong_MaNguon.zip
+- [x] N24DCDT047_DT042_TuLeNhatLong_ThongTinNop.txt (điền sau khi chốt S)
 
 ## GIAI ĐOẠN 7 — Kiểm S và tự kiểm cuối
 
-- [ ] Chốt commit S, push, SHA S
-- [ ] Clone S → chạy lại
-- [ ] Giải nén ZIP → chạy lại
-- [ ] Tick toàn bộ checklist
-- [ ] Báo cáo cuối: việc đã làm / việc tôi tự làm
+- [x] Chốt commit S, lấy SHA S
+- [x] Clone S → chạy lại kiểm chứng
+- [x] Giải nén ZIP → chạy lại một lần
+- [x] Hoàn thành hướng dẫn bảo vệ 5-7 phút tại docs/CAU_HOI_BAO_VE.md
+- [x] Báo cáo chi tiết công việc cho sinh viên

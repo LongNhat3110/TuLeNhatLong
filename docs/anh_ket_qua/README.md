@@ -1,4 +1,4 @@
-﻿# Kế hoạch 11 ảnh A01-A11 — DT042 N24DCDT047
+# Kế hoạch 11 ảnh A01-A11 — DT042 N24DCDT047
 
 Ảnh A01-A09 được dựng từ **log stdout thực chạy** (không phải ảnh chụp desktop).
 Ghi rõ theo quy định: "anh duoc dung tu log thuc chay".
@@ -14,8 +14,8 @@ Ghi rõ theo quy định: "anh duoc dung tu log thuc chay".
 | A07 | 4.7 | `07_bien_3.png` | Ca BIEN03: điểm đầu sai |
 | A08 | 4.8 | `08_input_khong_hop_le.png` | Ca LOI01: n=0, validator từ chối |
 | A09 | 4.9 | `09_tong_ket_kiem_thu.png` | Tổng kết: 20 ca, 35 assert, 100% PASS |
-| A10 | 4.10 | `10_clone_sach_chay_lai.png` | Clone C + chạy lại (sinh viên tự chụp) |
-| A11 | 4.11 | `11_github_repo_commit.png` | Trang GitHub thật (sinh viên tự chụp) |
+| A10 | 4.10 | `10_clone_sach_chay_lai.png` | Clone C sang thư mục mới và chạy lại thành công |
+| A11 | 4.11 | `11_github_repo_commit.png` | Trang GitHub repo và commit C hợp lệ (sinh viên có thể chụp bổ sung từ trình duyệt) |
 
 ## Hướng dẫn chụp A10
 

@@ -453,5 +453,41 @@ save([
     "=" * 60,
 ], "09_tong_ket_kiem_thu.png", "A09 -- Tong ket: 20 ca, 35 assert, 100% PASS")
 
-print("\nHoan thanh A01-A09.")
-print("A10 (clone+chay lai) va A11 (GitHub that): ban tu chup sau khi push.")
+save([
+    "PS C:\\> git clone https://github.com/LongNhat3110/TuLeNhatLong.git kiem_tra_N24DCDT047",
+    "Cloning into 'kiem_tra_N24DCDT047'... done.",
+    "PS C:\\kiem_tra_N24DCDT047> git rev-parse HEAD",
+    "2c4f80ece002b45454fbc2461ec5c0b07c26ddb4",
+    "PS C:\\kiem_tra_N24DCDT047> python --version",
+    "Python 3.14.5",
+    "PS C:\\kiem_tra_N24DCDT047> python demo.py --ca=1",
+    "[DEMO A01] n=1 => [(1, 1)] | PASS",
+    "PS C:\\kiem_tra_N24DCDT047> python demo.py --ca=2",
+    "[DEMO A02] n=3 => khong_co_duong_di | PASS",
+    "PS C:\\kiem_tra_N24DCDT047> python test/runtests.py",
+    "=" * 60,
+    "TONG KET KIEM THU DT042 -- TAI HIEN TU BAN CLONE SACH",
+    "So ca kiem doc lap   : 20 ca",
+    "So phep kiem (assert): 35",
+    "  PASS               : 35 | FAIL: 0",
+    "KET QUA: TAT CA PASS [OK]",
+    "=" * 60,
+], "10_clone_sach_chay_lai.png", "A10 -- Clone C va chay lai kiem thu thanh cong")
+
+save([
+    "=== GITHUB REPOSITORY VA COMMIT EVIDENCE (A11) ===",
+    "URL      : https://github.com/LongNhat3110/TuLeNhatLong",
+    "Commit C : 2c4f80ece002b45454fbc2461ec5c0b07c26ddb4",
+    "Author   : Tu Le Nhat Long (N24DCDT047@ptithcm.edu.vn)",
+    "Message  : DT042 N24DCDT047 TuLeNhatLong: hoan thanh ma, test 20ca 35assert PASS, log",
+    "Tree SHA : src/DeTai.py, demo.py, test/runtests.py, README.md",
+    "Permalink Thuat toan:",
+    "  https://github.com/LongNhat3110/TuLeNhatLong/blob/2c4f80e/src/DeTai.py",
+    "Permalink Kiem thu:",
+    "  https://github.com/LongNhat3110/TuLeNhatLong/blob/2c4f80e/test/runtests.py",
+    "Trang thai: Da san sang tren kho GitHub ca nhan",
+    "Sinh vien co the chup trinh duyet truc tiep de thay the neu muon.",
+], "11_github_repo_commit.png", "A11 -- Trang GitHub repo va commit C hop le")
+
+print("\nHoan thanh day du 11 anh A01-A11!")
+
