@@ -225,7 +225,7 @@ def make_png(lines: list, title: str = "", max_w: int = 900) -> bytes:
         bitmap = render_char(ch)
         for row, byte in enumerate(bitmap):
             for col in range(8):
-                bit = (byte >> (7 - col)) & 1
+                bit = (byte >> col) & 1
                 if bit:
                     for sy in range(SCALE):
                         for sx in range(SCALE):
