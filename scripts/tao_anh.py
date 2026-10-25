@@ -193,17 +193,17 @@ def render_char(ch: str) -> list:
     return FONT8.get(ch, DEFAULT_CHAR)
 
 
-def make_png(lines: list, title: str = "", max_w: int = 900) -> bytes:
-    """Tạo PNG từ danh sách dòng text; trả về bytes PNG."""
-    # Tính kích thước ảnh
+def make_png(lines: list, title: str = "") -> bytes:
+    """Tạo PNG từ danh sách dòng text; không bao giờ bị cắt chữ."""
     n_lines = len(lines) + (1 if title else 0)
     img_h = PAD_Y * 2 + n_lines * LINE_H
-    # Chiều rộng = max dòng hoặc max_w
+
+    # Chiều rộng tính chính xác theo dòng dài nhất để không bao giờ bị che chữ
     max_chars = max((len(l) for l in lines), default=10)
     if title:
         max_chars = max(max_chars, len(title))
-    img_w = min(max_w, max_chars * CW + PAD_X * 2)
-    img_w = max(img_w, 200)
+    img_w = max_chars * CW + PAD_X * 2 + CW * 2
+    img_w = max(img_w, 320)
 
     # Mảng pixel RGB: flat list [R,G,B, R,G,B, ...]
     pixels = bytearray(img_w * img_h * 3)
@@ -235,8 +235,6 @@ def make_png(lines: list, title: str = "", max_w: int = 900) -> bytes:
     def draw_line(text, y, color):
         x = PAD_X
         for ch in text:
-            if x + CW > img_w - PAD_X:
-                break
             if 32 <= ord(ch) < 127:
                 draw_char(ch, x, y, color)
             else:
