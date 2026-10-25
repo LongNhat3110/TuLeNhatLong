@@ -1,4 +1,4 @@
-﻿# DT042 — Tìm đường đi của quân mã qua mọi ô
+# DT042 — Tìm đường đi của quân mã qua mọi ô
 
 ## Thông tin và căn cứ
 
@@ -15,8 +15,10 @@
 | Căn cứ | Chương 3, Bài tập câu 27 — Bài toán mã đi tuần; trang in 86; trang PDF 98 |
 | Ngôn ngữ | Python 3 |
 | Phiên bản | Python 3.14.5 |
-| GitHub | [ĐIỀN sau khi push — LongNhat3110/TuLeNhatLong] |
-| SHA C | ghi trong docs/logs và báo cáo |
+| Ngày giao | 17/10/2026 |
+| Ngày nộp | 13/11/2026 |
+| GitHub | https://github.com/LongNhat3110/TuLeNhatLong |
+| SHA C | 2c4f80ece002b45454fbc2461ec5c0b07c26ddb4 |
 
 ## Hợp đồng input/output
 

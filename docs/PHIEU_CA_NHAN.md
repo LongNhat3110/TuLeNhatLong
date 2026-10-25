@@ -1,4 +1,4 @@
-﻿# PHIẾU GIAO ĐỀ TÀI CÁ NHÂN — DT042
+# PHIẾU GIAO ĐỀ TÀI CÁ NHÂN — DT042
 
 **Trích nguyên văn từ** `Danh_sach_va_de_giao/91_Phieu_giao_de_tai_INT13185_N03.docx`
 
@@ -16,6 +16,8 @@
 | Lớp | D24CQDT01-N |
 | Mã đề | DT042 |
 | Tên đề | Tìm đường đi của quân mã qua mọi ô |
+| Ngày giao | 17/10/2026 |
+| Ngày nộp | 13/11/2026 |
 
 ---
 
